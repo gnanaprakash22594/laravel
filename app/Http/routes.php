@@ -1,5 +1,11 @@
 <?php
-Route::get('/', function () {
-   //return view('welcome');
-   return "Hello World";
+
+
+Route::get('names', function()
+{
+    return array(
+      1 => "John",
+      2 => "Mary",
+      3 => "Steven"
+    );
 });
