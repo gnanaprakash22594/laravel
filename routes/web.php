@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/test', function () {
-    return view('Welcome');
+/*
+Route::get('/users/{id}/{name}', function($id, $name){
+    return "The is User " .$name." with an Id of ".$id;
 });
+*/
+
+Route::get('/', 'PagesController@index');
+Route::get('/about', 'PagesController@about');
+
+
+
+
